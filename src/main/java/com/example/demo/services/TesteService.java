@@ -15,9 +15,9 @@ public class TesteService {
 	@Autowired
 	private TesteRepository testeRepository;
 
-	public void salvar(String nome, String conteudo) {
+	public void salvar(Teste teste) {
 
-		testeRepository.save(new Teste(nome, conteudo));
+		testeRepository.save(teste);
 	}
 
 	public List<Teste> findAll() {

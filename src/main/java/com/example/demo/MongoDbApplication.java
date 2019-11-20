@@ -23,7 +23,7 @@ public class MongoDbApplication {
 	@PostConstruct
 	public void init() throws ParseException {
 
-		System.out.println(testeService.count());
 
+		System.out.println(testeService.count());
 	}
 }
